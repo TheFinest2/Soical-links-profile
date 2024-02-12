@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(11, 13, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+.container {
+    width: 25%;
+    background: rgb(31, 32, 34);
+    border-radius: .5em;
+    padding: 1.5em;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+img {
+    width: 25%;
+    border-radius: 50%;
+    margin-bottom: 1.2em;
+    text-align: center;
+}
+
+.profile {
+    margin-bottom: 1.2em;
+}
+
+.profile h1 {
+    font-size: clamp(1.5rem, 2vw, 2.8rem);
+    color: whitesmoke;
+}
+
+.profile span {
+    font-size: .8em;
+    color: rgb(101, 160, 13);
+}
+
+.profile-link p {
+    font-size: .8em;
+    color: whitesmoke;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: block;
+    padding: .5em 1.2em;
+    border-radius: .5em;
+    background: rgb(57, 61, 68);
+    margin-bottom: .6em;
+    font-weight: 600;
+    font-size: .8em;
+}
+
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+li:hover {
+    background: rgb(101, 160, 13);
+}
+
+/* Extra small devices (Phones, 600px and down)*/
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+        border-radius: .5em;
+        padding: 1.5em;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .profile h1 {
+        font-size: clamp(1.7rem, 2vw, 2.8rem);
+        color: whitesmoke;
+    }
+
+    .profile span {
+        font-size: 1em;
+        color: rgb(101, 160, 13);
+        font-weight: 600;
+    }
+
+    .profile-link p {
+        font-size: 1em;
+    }
+
+    li {
+        padding: .6em 1.2em;
+        font-size: 1em;
+    }
+}
